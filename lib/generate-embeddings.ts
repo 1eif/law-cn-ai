@@ -416,7 +416,7 @@ async function generateEmbeddings() {
 
         try {
           const configuration = new Configuration({
-            host: "https://azure2openai.1eif.me",
+            baseURL: "https://azure2openai.1eif.me",
             apiKey: process.env.OPENAI_KEY,
           })
           const openai = new OpenAIApi(configuration)
